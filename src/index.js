@@ -8,6 +8,7 @@ const cors = require("cors")
 
 dotenv.config()
 app.use(express.json()) // Parses the request as JSON
+app.use(cors())
 app.use("/users", userRouter)
 app.use("/note", noteRouter)
 
