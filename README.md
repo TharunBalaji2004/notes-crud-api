@@ -2,7 +2,7 @@
 
 | API Route | API Endpoint | HTTPS Method | Payload Fields | Description| Authentication Token |
 | :----:| :----: | :----: | :----: | :----: | :----: |
-| root | `/` | GET | - | Root path | ❌ |
+| - | `/` | GET | - | Root path | ❌ |
 | User | `/users/signup` | POST | `username, email, password` | To Signup new user | ❌ | 
 | User | `/users/signin` | POST | `email, password` | To Login existing user | ❌ | 
 | Note | `/note` | GET | - | To get all notes respective to user | ✅ | 
