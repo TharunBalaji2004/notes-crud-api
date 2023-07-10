@@ -11,9 +11,10 @@ app.use(express.json()) // Parses the request as JSON
 app.use(cors())
 app.use("/users", userRouter)
 app.use("/note", noteRouter)
+app.use(express.static(__dirname + '/views'));
 
 app.get("/", (req,res) => {
-    res.send("Notes API developed by THARUN BALAJI")
+    res.sendFile(__dirname + '/views/home.html');
 })
 
 const PORT = process.env.PORT || 5000

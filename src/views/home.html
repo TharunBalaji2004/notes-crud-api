@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes CRUD API</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Notes CRUD API</h1>
+        <p>Developed by Tharun Balaji R</p>
+    </div>
+    <div class="root">
+        <table>
+            <thead>
+            <tr>
+            <th style="text-align:center">API Route</th>
+            <th style="text-align:center">API Endpoint</th>
+            <th style="text-align:center">HTTPS Method</th>
+            <th style="text-align:center">Payload Fields</th>
+            <th style="text-align:center">Description</th>
+            <th style="text-align:center">Authentication Token</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td style="text-align:center">-</td>
+            <td style="text-align:center"><code>/</code></td>
+            <td style="text-align:center">GET</td>
+            <td style="text-align:center">-</td>
+            <td style="text-align:center">Root path</td>
+            <td style="text-align:center">❌</td>
+            </tr>
+            <tr>
+            <td style="text-align:center">User</td>
+            <td style="text-align:center"><code>/users/signup</code></td>
+            <td style="text-align:center">POST</td>
+            <td style="text-align:center"><code>username, email, password</code></td>
+            <td style="text-align:center">To Signup new user</td>
+            <td style="text-align:center">❌</td>
+            </tr>
+            <tr>
+            <td style="text-align:center">User</td>
+            <td style="text-align:center"><code>/users/signin</code></td>
+            <td style="text-align:center">POST</td>
+            <td style="text-align:center"><code>email, password</code></td>
+            <td style="text-align:center">To Login existing user</td>
+            <td style="text-align:center">❌</td>
+            </tr>
+            <tr>
+            <td style="text-align:center">Note</td>
+            <td style="text-align:center"><code>/note</code></td>
+            <td style="text-align:center">GET</td>
+            <td style="text-align:center">-</td>
+            <td style="text-align:center">To get all notes respective to user</td>
+            <td style="text-align:center">✅</td>
+            </tr>
+            <tr>
+            <td style="text-align:center">Note</td>
+            <td style="text-align:center"><code>/note</code></td>
+            <td style="text-align:center">POST</td>
+            <td style="text-align:center"><code>title, description</code></td>
+            <td style="text-align:center">To add and save new note</td>
+            <td style="text-align:center">✅</td>
+            </tr>
+            <tr>
+            <td style="text-align:center">Note</td>
+            <td style="text-align:center"><code>/note:noteId</code></td>
+            <td style="text-align:center">PUT</td>
+            <td style="text-align:center"><code>title, description</code></td>
+            <td style="text-align:center">To update existing note</td>
+            <td style="text-align:center">✅</td>
+            </tr>
+            <tr>
+            <td style="text-align:center">Note</td>
+            <td style="text-align:center"><code>/note:noteId</code></td>
+            <td style="text-align:center">DELETE</td>
+            <td style="text-align:center">-</td>
+            <td style="text-align:center">To delete existing note</td>
+            <td style="text-align:center">✅</td>
+            </tr>
+            </tbody>
+            </table>
+    </div>
+    <div class="footer">
+        <p>
+            Hosted API Link: 
+            <a href="https://notes-crud-api-xe2f.onrender.com/" target="_blank">https://notes-crud-api-xe2f.onrender.com/</a>
+        </p>
+        <p>
+            GitHub repo Link: 
+            <a href="https://github.com/TharunBalaji2004/notes-crud-api.git" target="_blank">https://github.com/TharunBalaji2004/notes-crud-api.git</a>
+        </p>
+    </div>
+</body>
+</html>
